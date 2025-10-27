@@ -20,8 +20,9 @@ async function bootstrap() {
     forbidNonWhitelisted: true,
     transform: true,
   }));
-  
-  await app.listen(8080);
-  console.log('🚀 Video Call Backend running on http://localhost:8080');
+
+  const PORT = process.env.PORT;
+  await app.listen(PORT);
+  console.log("🚀 Video Call Backend running on http://localhost:" + PORT);
 }
 bootstrap();
