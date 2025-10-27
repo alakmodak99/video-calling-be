@@ -17,7 +17,12 @@
     "test:debug": "node --inspect-brk -r tsconfig-paths/register -r ts-node/register node_modules/.bin/jest --runInBand",
     "test:e2e": "jest --config ./test/jest-e2e.json"
   },
-  "keywords": ["nestjs", "video-call", "authentication", "meeting-history"],
+  "keywords": [
+    "nestjs",
+    "video-call",
+    "authentication",
+    "meeting-history"
+  ],
   "author": "",
   "license": "ISC",
   "dependencies": {
@@ -40,7 +45,7 @@
     "typeorm": "^0.3.17"
   },
   "devDependencies": {
-    "@nestjs/cli": "^10.0.0",
+    "@nestjs/cli": "^10.4.9",
     "@nestjs/schematics": "^10.0.0",
     "@nestjs/testing": "^10.0.0",
     "@types/bcryptjs": "^2.4.6",
